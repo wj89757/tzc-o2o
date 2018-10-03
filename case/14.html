@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>栅格系统</title>
+	<!-- 分别为：屏幕宽度和设备一直，初始缩放比例，最大缩放比例和禁止用户缩放 -->
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<style>
+		.a
+		{
+			height: 50px;
+			border:1px solid #ccc;
+		}
+	</style>
+</head>
+<body>
+	
+	<!-- 固定宽度 container-->
+	<!-- 宽度为1070px -->
+	<div class="container a">
+		...
+	</div>
+	<hr>
+	<!-- 流动宽度，100%宽度 container-fluid-->
+	<div class="container-fluid a">
+		...
+	</div>
+	<hr>
+
+
+	<!-- 分配12列，来布局 -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-1 a">1</div>
+			<div class="col-md-1 a">1</div>
+			<div class="col-md-1 a">1</div>
+			<div class="col-md-1 a">1</div>
+			<div class="col-md-1 a">1</div>
+			<div class="col-md-1 a">1</div>
+			<div class="col-md-1 a">1</div>
+			<div class="col-md-1 a">1</div>
+			<div class="col-md-1 a">1</div>
+			<div class="col-md-1 a">1</div>
+			<div class="col-md-1 a">1</div>
+			<div class="col-md-1 a">1</div>
+		</div>
+		<div class="row">
+			<div class="col-md-9 a">9</div>
+			<div class="col-md-3 a">3</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 a">4</div>
+			<div class="col-md-4 a">4</div>
+			<div class="col-md-4 a">4</div>
+		</div>
+	</div>
+	<hr>
+	<!-- 随着屏幕的大小而滚动 -->
+	<!-- md中等屏幕 xs超小屏幕  sm小屏幕 lg大屏幕 col-md-1-->
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 a">a</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 a">a</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 a">a</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 a">a</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 a">a</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 a">a</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 a">a</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 a">a</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 a">a</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 a">a</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 a">a</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 a">a</div>
+		</div>
+	</div>
+	<hr>
+
+	<!-- 列偏移 向右边移动一位 -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 a">8</div>
+			<div class="col-md-3 col-md-offset-1 a">3</div>
+		</div>
+	</div>
+	<hr>
+
+	<!-- 嵌套 -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-9 a">
+				<div class="col-md-4 a">4</div>
+				<div class="col-md-4 a">4</div>
+				<div class="col-md-4 a">4</div>
+			</div>
+			<div class="col-md-3 a">3</div>
+		</div>
+	</div>
+	<hr>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

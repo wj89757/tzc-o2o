@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>路径分页标签和徽章组件</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body style="margin:40px;">
+
+	<!-- 路径组件，面包屑导航 -->
+	<ol class="breadcrumb">
+		<li><a href="#">首页</a></li>
+		<li><a href="#">产品列表</a></li>
+		<li class="active">韩版2015羊绒大衣</li>
+	</ol>
+	<hr>
+
+	<!-- 分页组件 -->
+	<!-- 首选项和禁用 -->
+	<!-- pagination-lg变大 -->
+	<ul class="pagination">
+		<li class="active"><a href="#">&laquo;</a></li>
+		<li><a href="#">1</a></li>
+		<li><a href="#">2</a></li>
+		<li><a href="#">3</a></li>
+		<li><a href="#">4</a></li>
+		<li><a href="#">5</a></li>
+		<li><a href="#">&raquo;</a></li>
+	</ul>
+	<hr>
+
+	<!-- 上一页下一页 -->
+	<ul class="pager">
+		<li><a href="#">上一页</a></li>
+		<li><a href="#">下一页</a></li>
+	</ul>
+	<hr>
+	
+	<!-- previous最左边 next右边 -->
+	<ul class="pager">
+		<li class="previous"><a href="#">上一页</a></li>
+		<li class="next"><a href="#">下一页</a></li>
+	</ul>
+	<hr>
+
+	<!-- 标签 -->
+	<h3>
+		标签
+		<span class="label label-default">new</span>
+	</h3>
+	<hr>
+
+
+	<!-- 徽章 -->
+	<a href="#">
+		信息
+		<span class="badge">10</span>
+	</a>
+	<button class="btn btn-success">
+		提交
+		<span class="badge">
+			10	
+		</span>
+	</button>
+	<hr>
+
+	<!-- 激活状态下 -->
+	<ul class="nav nav-pills">
+		<li class="active">
+			<a href="#">首页
+				<span class="badge">2</span>
+			</a>
+		</li>
+		<li><a href="#">关于</a></li>
+	</ul>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

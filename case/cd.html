@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>图标菜单按钮组件</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<style>
+		.a
+		{
+			height: 50px;
+			border:1px solid #ccc;
+			width: 200px;
+		}
+	</style>
+</head>
+<body style="margin:50px">
+	<!-- 图标显示 -->
+	<i class="glyphicon glyphicon-star"></i>
+	<span class="glyphicon glyphicon-star"></span>
+	<hr>
+
+	<!-- 结合按钮 -->
+	<button class="btn btn-lg btn-default">
+		<span class="glyphicon glyphicon-star"></span>
+	</button>
+	<hr>
+
+	<!-- 下拉菜单 -->
+	<!-- open默认打开 放在dropdown后面 -->
+	<!-- dropup向上菜单 -->
+	<!-- data-toggle="dropdown"调用JavaScript -->
+	<div class="dropdown">
+		<button class="btn btn-default" data-toggle="dropdown">
+			下拉菜单
+			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+			<!-- 没有超链接的导航 -->
+			<li class="dropdown-header">网站导航</li>
+			<li><a href="#">首页</a></li>
+			<li><a href="#">产品</a></li>
+			<li><a href="#">资讯</a></li>
+			<!-- 分割线 class="divider" -->
+			<!-- 设置禁用 disabled -->
+			<li><a href="#">关于</a></li>
+		</ul>
+	</div>
+	<hr>
+
+	<!-- 按钮群组，好看的样式 -->
+	<!-- btn-toolbar把群组放一起 -->
+	<div class="btn-group">
+		<button class="btn btn-default">左</button>
+		<button class="btn btn-default">中</button>
+		<button class="btn btn-default">右</button>
+	</div>
+	<hr>
+
+	<!-- 嵌套一个分组 -->
+	<div class="btn-group">
+		<button class="btn btn-default">左</button>
+		<button class="btn btn-default">中</button>
+		<button class="btn btn-default">右</button>
+		<!-- dropdown-toggle分组中的下拉菜单右边变成圆角 -->
+		<div class="btn-group">
+			<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+				下拉菜单
+				<span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu">
+				<!-- 没有超链接的导航 -->
+				<li class="dropdown-header">网站导航</li>
+				<li><a href="#">首页</a></li>
+				<li><a href="#">产品</a></li>
+				<li><a href="#">资讯</a></li>
+				<!-- 分割线 class="divider" -->
+				<!-- 设置禁用 disabled -->
+				<li><a href="#">关于</a></li>
+			</ul>
+		</div>
+	</div>
+	<hr>
+
+
+	<!-- 垂直排列，对齐 -->
+	<div class="btn-group-vertical">
+		<button class="btn btn-default">左</button>
+		<button class="btn btn-default">中</button>
+		<button class="btn btn-default">右</button>
+	</div>
+	<hr>
+
+	<!-- 两端对齐 -->
+	<!-- 不能用button -->
+	<div class="btn-group-justified">
+		<a class="btn btn-default">左</a>
+		<a class="btn btn-default">中</a>
+		<a class="btn btn-default">右</a>
+	</div>
+	<hr>
+	
+	<!-- 按钮式下拉菜单 -->
+	<div class="btn-group">
+		<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+			下拉菜单
+			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+			<!-- 没有超链接的导航 -->
+			<li class="dropdown-header">网站导航</li>
+			<li><a href="#">首页</a></li>
+			<li><a href="#">产品</a></li>
+			<li><a href="#">资讯</a></li>
+			<!-- 分割线 class="divider" -->
+			<!-- 设置禁用 disabled -->
+			<li><a href="#">关于</a></li>
+		</ul>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

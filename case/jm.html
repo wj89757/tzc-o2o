@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>巨幕也偷缩略图和警告框组件</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+	
+	<!-- 巨幕 -->
+	<!-- 展示最关键的区域 -->
+	<div class="container">
+		<div class="jumbotron">
+			<h2>网站标题</h2>
+			<p>我是网站的详细简介</p>
+			<p>
+				<a class="btn btn-default">
+					快速进入
+				</a>
+			</p>
+		</div>
+	</div>
+	<hr>
+
+	<!-- 流行做法巨幕 -->
+	<div class="jumbotron">
+		<div class="container">
+			<h2>网站标题</h2>
+			<p>我是网站的详细简介</p>
+			<p>
+				<a class="btn btn-default">
+					快速进入
+				</a>
+			</p>
+		</div>
+	</div>
+	<hr>
+
+
+	<!-- 页头组件 -->
+	<div class="page-header">
+		<h1>
+			我是大标题
+			<small>我是小标题</small>
+		</h1>
+	</div>
+
+	<!-- 缩略图组件 响应式设计-->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 col-sm-4 col-xs-6">
+				<div class="thumbnail">
+					<img src="img/1.jpg">
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-4 col-xs-6">
+				<div class="thumbnail">
+					<img src="img/1.jpg">
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-4 col-xs-6">
+				<div class="thumbnail">
+					<img src="img/1.jpg">
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-4 col-xs-6">
+				<div class="thumbnail">
+					<img src="img/1.jpg">
+				</div>
+			</div>
+		</div>
+	</div>
+	<hr>
+
+	<!-- 自定义内容图文并茂 -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 col-sm-4 col-xs-6">
+				<div class="thumbnail">
+					<img src="img/1.jpg">
+					<div class="caption">
+						<h3>图片</h3>
+						<p>关于这张图片的详情！</p>
+						<p><a href="#" class="btn btn-default">快速进入</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-4 col-xs-6">
+				<div class="thumbnail">
+					<img src="img/1.jpg">
+					<div class="caption">
+						<h3>图片</h3>
+						<p>关于这张图片的详情！</p>
+						<p><a href="#" class="btn btn-default">快速进入</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-4 col-xs-6">
+				<div class="thumbnail">
+					<img src="img/1.jpg">
+					<div class="caption">
+						<h3>图片</h3>
+						<p>关于这张图片的详情！</p>
+						<p><a href="#" class="btn btn-default">快速进入</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-4 col-xs-6">
+				<div class="thumbnail">
+					<img src="img/1.jpg">
+					<div class="caption">
+						<h3>图片</h3>
+						<p>关于这张图片的详情！</p>
+						<p><a href="#" class="btn btn-default">快速进入</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<hr>
+
+	<!-- 警告框组件 -->
+	<!-- data-dismiss="alert"关闭功能的实现 -->
+	<!-- &time;关闭按钮 -->
+	<div class="alert alert-success" style="margin:0 100px">
+		我是一个成功的警告框！
+		<button class="close" data-dismiss="alert">
+			<span>
+				&times;
+			</span>
+		</button>
+	</div>
+	<hr>
+
+	<!-- 加上超链接 -->
+	<div class="alert alert-success" style="margin:0 100px">
+		我是一个成功的警告框！
+		<a href="#" class="alert-link">请下载最新版本</a>
+		<button class="close" data-dismiss="alert">
+			<span>
+				&times;
+			</span>
+		</button>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

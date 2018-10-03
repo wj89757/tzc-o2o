@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>列表组面板和嵌入组件</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body style="margin:50px">
+	
+	<ul class="list-group">
+		<li class="list-group-item">1.这是首页</li>
+		<li class="list-group-item">
+			2.这是第二页
+			<span class="badge">
+				10
+			</span>
+		</li>
+		<li class="list-group-item">3.这是第三页</li>
+		<li class="list-group-item">4.这是第四页</li>
+	</ul>
+	<hr>
+
+	<div class="list-group">
+		<a href="#" class="list-group-item">1.这是首页</a>
+		<a href="#" class="list-group-item active">
+			2.这是第二页
+			<span class="badge">
+				10
+			</span>
+		</a>
+		<a href="#" class="list-group-item disabled">3.这是第三页</a>
+		<a href="#" class="list-group-item list-group-item-success">4.这是第四页</a>
+	</div>
+	<hr>
+
+	<!-- 定制内容 -->
+	<div class="list-group">
+		<a href="#" class="list-group-item">
+			<h4>列表标题</h4>
+			<p>详细内容。。。</p>
+		</a>
+		<a href="#" class="list-group-item active">
+			2.这是第二页
+			<span class="badge">
+				10
+			</span>
+		</a>
+		<a href="#" class="list-group-item disabled">3.这是第三页</a>
+		<a href="#" class="list-group-item list-group-item-success">4.这是第四页</a>
+	</div>
+	<hr>
+
+
+	<!-- 面板组件 -->
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h3 class="panel-title">我是标题区域</h3>
+		</div>
+		<div class="panel-body">
+			我是一个面板容器
+		</div>
+		<div class="panel-footer">
+			我是底部
+		</div>
+	</div>
+	<hr>
+
+	<!-- 表格类面板 -->
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h3 class="panel-title">我是标题区域</h3>
+		</div>
+		<div class="panel-body">
+			我是一个面板容器
+		</div>
+		<table class="table">
+			<tr>
+				<th>1</th>
+				<th>2</th>
+				<th>3</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+			</tr>
+		</table>
+		<ul class="list-group">
+		<li class="list-group-item">1.这是首页</li>
+		<li class="list-group-item">
+			2.这是第二页
+			<span class="badge">
+				10
+			</span>
+		</li>
+		<li class="list-group-item">3.这是第三页</li>
+		<li class="list-group-item">4.这是第四页</li>
+	</ul>
+		<div class="panel-footer">
+			我是底部
+		</div>
+	</div>
+	<hr>
+
+	<!-- 响应式嵌入组件 -->
+	<!-- 16:9 -->
+	<div class="embed-responsive embed-responsive-16by9">
+		<embed width="100%" height="100%" wmode="Transparent" allowfullscreen="true" allowscriptaccess="always" quality="high" src="http://share.vrs.sohu.com/1977413/v.swf&topBar=1&autoplay=false&plid=7119459&pub_catecode=0&from=page" type="application/x-shockwave-flash"/></embed>
+	</div>
+	
+	<!-- 4:3 -->
+	<div class="embed-responsive embed-responsive-4by3">
+		<embed width="100%" height="100%" wmode="Transparent" allowfullscreen="true" allowscriptaccess="always" quality="high" src="http://share.vrs.sohu.com/1977413/v.swf&topBar=1&autoplay=false&plid=7119459&pub_catecode=0&from=page" type="application/x-shockwave-flash"/></embed>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
